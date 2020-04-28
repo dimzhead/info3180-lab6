@@ -2,6 +2,42 @@ body {
     padding-top: 5rem;
 }
 
-footer  {
+footer {
     padding-top: 20px;
+}
+
+#contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+
+.news_list {
+    border-top: 3px solid rgb(38, 187, 38);
+    box-shadow: 0 4px 8px 0 rgb(153, 153, 153);
+    max-width: 300px;
+    text-align: center;
+    height: 400px;
+    overflow-y: hidden;
+    word-wrap: break-word; 
+    padding-bottom: 40px;
+}
+
+.news_list p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+#image {
+    width: 80%
+}
+
+h6,p {
+    padding: 20px;
+    font-style: italic;
 }
